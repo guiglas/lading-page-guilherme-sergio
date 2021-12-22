@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { Container, createTheme, ThemeProvider } from '@mui/material';
+import Inicio from './pages/Inicio';
+import Cabecalho from './pages/Cabecalho';
 import reportWebVitals from './reportWebVitals';
+import Rotas from './routes';
+import SobreMim from './pages/SobreMim';
+import Contato from './pages/Contato';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+
+const theme= createTheme ({
+  palette: {
+    primary: {
+      main: '#03BB85'
+    },
+    secondary: {
+      main: '#9400d3'
+    },
+  }
+})
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <ThemeProvider theme={theme}>
+
+    <Inicio/>
+
+      <Cabecalho/>
+      </ThemeProvider>
   </React.StrictMode>,
+
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
