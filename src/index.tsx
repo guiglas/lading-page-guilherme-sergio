@@ -5,10 +5,10 @@ import { Container, createTheme, ThemeProvider } from '@mui/material';
 import Inicio from './pages/Inicio';
 import Cabecalho from './pages/Cabecalho';
 import reportWebVitals from './reportWebVitals';
-import Rotas from './routes';
 import SobreMim from './pages/SobreMim';
 import Contato from './pages/Contato';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Application from './application';
 
 
 const theme= createTheme ({
@@ -30,11 +30,9 @@ ReactDOM.render(
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <ThemeProvider theme={theme}>
-
-    <Inicio/>
-
-      <Cabecalho/>
-      </ThemeProvider>
+    <Application/>
+        <Cabecalho/>
+    </ThemeProvider>
   </React.StrictMode>,
 
   document.getElementById('root')

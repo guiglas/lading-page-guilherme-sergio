@@ -1,10 +1,11 @@
 import { CardMedia, Grid } from '@mui/material';
 import React from 'react';
-
+import Ipage from '../../interfaces/page';
 import { CardSobre, Conteudo, Title } from './styles';
 import Foto from "./foto.png"
+import { Route } from 'react-router-dom';
 
-function Inicio() {
+const Inicio: React.FunctionComponent<Ipage> = props => {
     return (
       <CardSobre>
         <Grid 
@@ -26,7 +27,6 @@ function Inicio() {
           </Grid>
         </Grid>
       </CardSobre>
-
     )
 }
 
