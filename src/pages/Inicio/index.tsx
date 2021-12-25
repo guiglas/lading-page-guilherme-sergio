@@ -4,9 +4,11 @@ import Ipage from '../../interfaces/page';
 import { CardSobre, Conteudo, Title } from './styles';
 import Foto from "./foto.png"
 import { Route } from 'react-router-dom';
+import LinkPag from '../Link';
 
 const Inicio: React.FunctionComponent<Ipage> = props => {
     return (
+      <>
       <CardSobre>
         <Grid 
         container
@@ -27,6 +29,8 @@ const Inicio: React.FunctionComponent<Ipage> = props => {
           </Grid>
         </Grid>
       </CardSobre>
+            <LinkPag/>
+            </>
     )
 }
 

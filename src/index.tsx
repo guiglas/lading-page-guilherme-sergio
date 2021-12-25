@@ -9,6 +9,7 @@ import SobreMim from './pages/SobreMim';
 import Contato from './pages/Contato';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Application from './application';
+import LinkPag from './pages/Link';
 
 
 const theme= createTheme ({
@@ -31,7 +32,6 @@ ReactDOM.render(
     />
     <ThemeProvider theme={theme}>
     <Application/>
-        <Cabecalho/>
     </ThemeProvider>
   </React.StrictMode>,
 
