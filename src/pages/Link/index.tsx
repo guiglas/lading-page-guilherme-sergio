@@ -1,27 +1,17 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import React from "react"
-import './styles.css'
+import './styles.tsx'
+import { Button } from "@mui/material";
+import { ButtonSobre, ContainerSobre } from "./styles";
 
 function LinkPag () {
+    let navigate = useNavigate();
 return (
-<div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre Mim</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
-      <Outlet />
-    </div>
+    <ContainerSobre>
+            <ButtonSobre variant="contained" onClick={() => navigate("/")}>Inicio</ButtonSobre> 
+            <ButtonSobre  onClick={() => navigate("/sobre")}>Sobre Mim</ButtonSobre> 
+            <ButtonSobre  onClick={() => navigate("/contato")}>Informações de contato</ButtonSobre> 
+    </ContainerSobre>
 )
 }
 
