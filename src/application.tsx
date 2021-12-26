@@ -12,8 +12,8 @@ const Application: React.FunctionComponent<{}> = props => {
         <div>
             <BrowserRouter>
                 <Routes >
-                    <Route path="/" element={<Inicio name={"a"}/>}/>
-                    <Route path="/contato" element={<Contato name={"a"}/>}/>
+                    <Route path="/" element={<Inicio/>}/>
+                    <Route path="/contato" element={<Contato/>}/>
                     <Route path="/sobre" element={<SobreMim/>}/>
                 </Routes>
             </BrowserRouter>

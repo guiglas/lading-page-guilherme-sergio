@@ -29,7 +29,7 @@ const Inicio: React.FunctionComponent<Ipage> = props => {
           </Grid>
         </Grid>
       </CardSobre>
-            <LinkPag/>
+      <LinkPag />
             </>
     )
 }
