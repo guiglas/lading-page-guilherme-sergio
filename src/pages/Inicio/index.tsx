@@ -24,9 +24,32 @@ const Inicio: React.FunctionComponent<Ipage> = props => {
           </Grid>
           <Grid item xs={8}>
             <Title>Olá, me chamo Guilherme</Title>
-            <Conteudo>Sou estudante de Engenharia Química e trabalho atualmente como desenvolvedor web.</Conteudo>
-            <Conteudo>Este e um site que foi construído com o intuito de mostrar um pouco das minhas habilidades e explorar alguns pacotes do REACT.</Conteudo>
+            <Conteudo>Sou estudante de Engenharia Química e trabalho atualmente como desenvolvedor Front-end para web.</Conteudo>
+            <Conteudo>Estou à procura de me especializar cada vez em desenvolvimento web. </Conteudo>
           </Grid>
+          <Grid item xs={12}>
+              <Conteudo>Este site foi construido utilizando:</Conteudo>
+            </Grid>
+            <Grid item xs={4}>
+              <Conteudo>React:</Conteudo>
+              </Grid>
+            <Grid item xs={6}>
+              <Conteudo>
+              <ul>
+                <li>Style Componentes</li>
+                <li>React Router Doom</li>
+                <li>Material UI</li>
+              </ul>
+              </Conteudo>
+            </Grid>
+            <Grid item xs={4}>
+              <Conteudo>Typescript:</Conteudo>
+              </Grid>
+            <Grid item xs={6}>
+             <Conteudo>
+               Typescript e um compilador 
+             </Conteudo>
+            </Grid>
         </Grid>
       </CardSobre>
       <LinkPag />

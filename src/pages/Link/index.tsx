@@ -8,7 +8,7 @@ import Ibutton from "../../interfaces/button";
 
 
 function LinkPag() {
-    let navigate = useNavigate();    
+    let navigate = useNavigate();  
 return (
     <ContainerSobre>
             <ButtonSobre variant={undefined} onClick={() => { navigate("/") }}>Inicio</ButtonSobre> 
