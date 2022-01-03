@@ -9,6 +9,7 @@ import LinkPag from '../Link';
 const Inicio: React.FunctionComponent<Ipage> = props => {
     return (
       <>
+            <LinkPag button1="contained"/>
       <CardSobre>
         <Grid 
         container
@@ -27,7 +28,7 @@ const Inicio: React.FunctionComponent<Ipage> = props => {
             <Conteudo>Sou estudante de Engenharia Química e trabalho atualmente como desenvolvedor Front-end para web.</Conteudo>
             <Conteudo>Estou à procura de me especializar cada vez em desenvolvimento web. </Conteudo>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={10}>
               <Conteudo>Este site foi construido utilizando:</Conteudo>
             </Grid>
             <Grid item xs={4}>
@@ -52,7 +53,7 @@ const Inicio: React.FunctionComponent<Ipage> = props => {
             </Grid>
         </Grid>
       </CardSobre>
-      <LinkPag />
+
             </>
     )
 }

@@ -8,6 +8,7 @@ const Contato: React.FunctionComponent<Ipage> = props => {
 
     return (
       <>
+            <LinkPag button3="contained"/>
       <CardContato>
         <TituloContato>Informações de contato</TituloContato>
         <Grid 
@@ -27,8 +28,6 @@ const Contato: React.FunctionComponent<Ipage> = props => {
             </ItemGride>
          </Grid>
       </CardContato>
-
-      <LinkPag/>
       </>
     )
 }

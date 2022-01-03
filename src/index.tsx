@@ -15,7 +15,8 @@ import LinkPag from './pages/Link';
 const theme= createTheme ({
   palette: {
     primary: {
-      main: '#03BB85'
+      //main: '#03BB85'
+      main: '#ffffff'
     },
     secondary: {
       main: '#9400d3'

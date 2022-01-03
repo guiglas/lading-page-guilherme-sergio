@@ -12,6 +12,7 @@ function SobreMim () {
 
     return (
     <>
+          <LinkPag button2="contained" />
   <Container>          
         <TituloSobre>Sobre Mim</TituloSobre>
           <StepSobre/>
@@ -20,7 +21,6 @@ function SobreMim () {
             <ConteudoSobre>Testezada</ConteudoSobre>
           </CardSobre>
       </Container>
-      <LinkPag/>
       </>
     )
 }

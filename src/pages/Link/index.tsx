@@ -7,15 +7,19 @@ import zIndex from "@mui/material/styles/zIndex";
 import Ibutton from "../../interfaces/button";
 
 
-function LinkPag() {
-    let navigate = useNavigate();  
+function LinkPag(props: any) {
+    let navigate = useNavigate();    
 return (
     <ContainerSobre>
-            <ButtonSobre variant={undefined} onClick={() => { navigate("/") }}>Inicio</ButtonSobre> 
-            <ButtonSobre variant={undefined} onClick={() => { navigate("/sobre")}}>Sobre Mim</ButtonSobre> 
-            <ButtonSobre variant={undefined} onClick={() => { navigate("/contato")}}>Informações de contato</ButtonSobre> 
+            <ButtonSobre variant={props.button1} onClick={() => { navigate("/") }}>Inicio</ButtonSobre> 
+            <ButtonSobre variant={props.button2} onClick={() => { navigate("/sobre")}}>Sobre Mim</ButtonSobre> 
+            <ButtonSobre variant={props.button3} onClick={() => { navigate("/contato")}}>Informações de contato</ButtonSobre> 
     </ContainerSobre>
 )
 }
 
 export default LinkPag;
+
+function props(props: any) {
+    throw new Error("Function not implemented.");
+}

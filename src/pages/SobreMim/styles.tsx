@@ -1,10 +1,15 @@
 import styled from '@emotion/styled';
 import { Card } from '@mui/material';
 
-export const CardSobre = styled(Card)`
+export const CardSobre = styled.div`
 display: flex;
-margin-top: 10%;
+margin: 0% auto;
 flex-direction: column;
+box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+overflow: hidden;
+display: flex;
+width: 50%;
+border-radius: 5px;
 `;
 
 export const SubTitulo = styled.h3`
